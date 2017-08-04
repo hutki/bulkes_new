@@ -1,0 +1,30 @@
+@media (max-width: 320px){
+	#content_block{
+	
+	table, table p, table ul li{
+		font-size: 8px;
+	}
+}
+.footer-block{
+	padding: 10px 10px 0;
+}
+
+.f_contact{
+	float: none;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+
+}
+.f_contact p:first-child{
+	margin-bottom: 5px;
+}
+.f_add{
+	width: 300px;
+	font-size: 13px;
+
+}
+.social{
+	margin-top: 10px;
+}
+}

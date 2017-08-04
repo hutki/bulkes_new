@@ -1,0 +1,38 @@
+@media (max-width: 480px){
+	footer{
+	.footer-img{
+		height: 415px;
+  	}
+}
+	.footer-block{
+		padding-top:10px;
+	.f_contact {
+		margin-bottom:0;
+		text-align:center;
+		.contact_block{
+			float:none;
+			display:inline-block;
+			width:226px;
+			#search {
+				max-width:226px;
+				display:inline-block;
+			}
+		}
+		.form_block{
+			width: 100%;
+			margin-top: 10px;
+			text-align: center;
+		}
+		.f_tel{
+			margin-bottom:5px;
+			width:226px;
+		}
+		.f_add{
+			margin:10px 0
+		}
+	 	
+	}
+}
+
+}
+

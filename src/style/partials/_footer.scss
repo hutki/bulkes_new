@@ -1,0 +1,190 @@
+/*************************************
+Footer
+**************************************/
+footer{
+	position: relative;
+	.footer-img{
+		position:absolute;
+		width:100%;
+		height: 225px;
+	    background: url(../img/city.png) repeat-x left top;
+	    opacity: 0.1;
+	    z-index: -1;
+  	}
+}
+.footer-block {
+	margin:0 auto;
+	padding: 0 10px;
+	max-width:1100px;
+	letter-spacing:1px;
+	padding-top:50px;
+		.f_contact{
+			max-width: 100%;
+			.contact_block, .adr_block{
+				float: left;
+				width: 33.3333%;
+				#search{
+					border: 1px solid #ccc;
+					outline: none;
+				   	width: 100%;
+				   	max-width:200px;
+				   	height:23px;
+				   	background: #f2f2f2;
+				   	margin-top: 10px;
+				   	   	
+				    ::-webkit-input-placeholder{
+				       	color: #333;
+				       	text-transform: uppercase;
+				       	font-size: 12px;
+				    }
+				    ::-moz-placeholder{ /* Firefox 19+ */
+					    color: #333;
+				    	text-transform: uppercase;
+				   		font-size: 12px;
+				    }
+					:-ms-input-placeholder{
+				    	color: #333;
+				        text-transform: uppercase;
+				        font-size: 12px;
+				    }
+				    :-moz-placeholder{ /* Firefox 18- */
+				        color: #333;
+				        text-transform: uppercase;
+				        font-size: 12px;
+				    }
+					
+					input[type="text"]{
+						font-family: GothamProLight;
+						font-size: 13px;
+						width:70%;
+						padding: 5px 8px;
+						color: #333;
+						outline: none;
+						border: none;
+						background: none;
+						}
+					input[type="text"]:focus{
+							
+					}
+					input[type="submit"]{
+						border: none;
+						background: url(../img/search_mob.png) no-repeat center center;
+						display: block;
+						width: 10%;
+						height: 19px;
+						cursor: pointer;
+						text-indent: -9999px;
+						float: right;
+						margin:2px 4px;
+					}
+				}
+
+			}
+			.align_left{
+				text-align: right;
+			}
+			.form_block{
+				font-size:15px;
+				color:#000;
+				float: left;
+				width: 33.3333%;
+			.feedback_foot{
+				
+				p{
+					margin-bottom: 10px;
+				}
+				input{
+					background: #f2f2f2;
+					border: 1px solid #ccc;
+					padding: 2px;
+					
+				}
+				td{
+					padding-bottom: 4px;
+
+				}
+				#submit{
+					color: #333;
+					font-size: 14px;
+					padding: 2px 0;
+					cursor: pointer;
+					&:hover{
+							outline: 1px solid #dfdfdf;
+					}
+				}
+
+
+			}
+		}
+			.f_tel{
+				max-width: 200px;
+				font-size: 18px;
+				color: #000;
+				text-align: left;
+				p{
+					&:first-child{
+						font-size: 15px;
+						margin-bottom: 10px;
+					}
+				}
+				#date_foot{
+					margin-top: 15px;
+					text-align: center;
+				}
+			}
+			.f_add{
+				font-size: 15px;
+				color: #000;
+				width: 100%;
+				text-align: left;
+				display: inline-block;;
+					p{
+						&:first-child{
+							margin-bottom: 5px;
+						}
+					}
+					.social{
+						position: relative;
+						margin-top: 20px;
+						.vk{
+							display: block;
+							background: url(../img/vk.png) no-repeat left top;
+							width: 109px;
+							height: 27px;
+							float: left;
+						}
+						.other-social{
+							display: block;
+							background: url(../img/social.png) no-repeat left top;
+							width: 114px;
+							height: 24px;
+							position: absolute;
+							right: 0;
+						}
+					}
+
+			}
+		}
+}
+.copyrait{
+	margin: 15px auto 0;
+	color: #8f8f8f;
+	font-size: 12px;
+	.perm{
+		float:left;
+	}
+	.dev{
+		text-align: right;
+		a{
+			text-decoration: none;
+			color: #8f8f8f;
+			&:hover,
+			&:focus {
+				color: #3d3d3d;
+			}
+		}
+	}
+}
+/*************************************
+End footer
+**************************************/

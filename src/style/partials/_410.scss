@@ -1,0 +1,56 @@
+@media (max-width: 410px){
+	.footer-block{
+	padding: 0 10px;
+}
+#top_panel{
+		.centr_block{
+			#menu{
+				width:263px;
+			}
+			.search_menu{
+				right: 10px;
+			}
+		}
+		.bug{
+		width: 50px;
+		#pull:after{	
+				display: none;
+			}
+	}
+	}
+#content_block{
+	h1{
+		font-size: 20px;
+	}
+	.img_left{
+		float: none;
+		margin:0 auto 25px;
+		display: block;
+	}
+	table, table p, table ul li{
+		font-size: 10px;
+	}
+}
+
+
+.footer-block {
+	.f_contact {
+		.adr_block {
+			.f_add {
+    			width: 100%;
+			}
+		}
+	} 
+}
+
+.copyrait {
+	.perm{
+		width: 100%;
+		text-align: center;
+	}
+	.dev{
+		text-align: center;
+		}
+}
+}
+
