@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 body
 {
@@ -12,8 +12,183 @@ body
 	clear:both;
 }
 
+ul{
+	li{
+		list-style-type: none;
+	}
+}
 /***************HEADER********************/
 header {
-  margin-bottom:70px;
+	width: 100%;
+	margin-bottom:70px;
+	background: url(../img/header_bg.png) center center no-repeat;
+	height: 843px;
+ 
+  .header_bl{
+	max-width: 1135px;
+	height: 585px;
+	margin: 0 auto;
+	position: relative;
+
+	#logo_bl{
+		height: 41px;
+		padding-top: 300px;
+		text-align: center;
+	}
+	.h_menu{
+		position: absolute;
+		right: 0;
+		top:0;
+		.signature{
+			text-align: right;
+			margin: 10px 0 20px;
+		}
+		.h_menu_l{
+			width: 265px;
+			float: left; 
+			color: #151210;
+			margin-right: 20px;
+			text-align: right;
+			ul{
+				li:first-child{
+				font-size: 30px;
+				margin-bottom: 40px;
+			}
+				li{
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 30px;
+					a{
+						text-decoration: none;
+						color: inherit;
+						&:hover{
+							color:#fff;
+						}
+					}
+				}
+				.active a{
+					color:#ffffff;
+				}
+			}
+			
+		}
+		.h_menu_r{
+			width: 190px;
+			float: left;
+			color: #151210;
+			ul{
+				li:first-child{
+				font-size: 30px;
+				margin-bottom: 40px;
+			}
+				li{
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 30px;
+					a{
+						text-decoration: none;
+						color: inherit;
+						&:hover{
+							color:#fff;
+						}
+					}
+				}
+				.active a{
+					color:#ffffff;
+				}
+			}
+				}
+	}
+  }
+
+	.mid_menu{
+		width: 1135px;
+		margin:0 auto;
+		text-align: right;
+		#search{
+			display: inline-block;
+			outline: none;
+			max-width:240px;
+			height:37px;
+			background: #fff;
+			margin-top: 10px;
+				
+			::-webkit-input-placeholder{
+				color: #333;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+			::-moz-placeholder{ /* Firefox 19+ */
+				color: #333;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+			:-ms-input-placeholder{
+				color: #333;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+			:-moz-placeholder{ /* Firefox 18- */
+				color: #333;
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+			
+			input[type="text"]{
+				font-family: GothamProLight;
+				font-size: 20px;
+				width:84%;
+				padding: 6px 0;
+				color: #333;
+				outline: none;
+				border-bottom: 3px dotted #cdc8b9;
+				border-top: none;
+				border-right: none;
+				border-left:none; 
+				background: none;
+				}
+			input[type="text"]:focus{
+					
+			}
+			input[type="submit"]{
+				border: none;
+				background: url(../img/search.png) no-repeat center center;
+				display: block;
+				width: 37px;
+				height: 37px;
+				cursor: pointer;
+				text-indent: -9999px;
+				float: right;
+				
+			}
+		}
+		nav{
+			margin:30px 15px 0 0;
+			
+			ul{
+				li{
+					*display: inline !important;
+					display: inline-block;
+					padding: 0 15px;
+					a{
+						text-decoration: none;
+						color:  #151210;
+						font-size: 19.59px;
+						font-weight: 400;
+						line-height: 30px;
+						text-align: right;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}	
+
+
+
+
+
+
+	}
 }
+
 
