@@ -5,6 +5,7 @@
 body
 {
 	color:#333;
+	background:url(../img/foot_bg.png) left bottom repeat-x;
 	background-color:#fcfcfc;
 	font-family: 'MyriadProRegular';
 }
@@ -20,9 +21,9 @@ ul{
 /***************HEADER********************/
 header {
 	width: 100%;
-	margin-bottom:70px;
 	background: url(../img/header_bg.png) center center no-repeat;
 	height: 843px;
+	margin-bottom: -120px;
  
   .header_bl{
 	max-width: 1135px;

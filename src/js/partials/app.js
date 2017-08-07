@@ -87,8 +87,8 @@ var c_left = Number(obj.children('ul').css('left').replace('px',''));
 var w_button = obj.find('.next').width();
 
 	$(window).resize(function() {
-			itm = Math.floor((Number($('#carusel').parent().width()) - w_button * 2) / w_img);
-			$('#carusel').css({'width':(itm*w_img + 2*w_button)+'px'});
+			itm = Math.floor((Number($('#carusel').parent().width()) - w_button ) / w_img);
+			$('#carusel').css({'width':(itm*w_img + w_button)+'px'});
 		});
 
 obj.children('ul').width(w_img * obj.find('li').length);
