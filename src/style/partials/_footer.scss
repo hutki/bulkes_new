@@ -4,6 +4,7 @@ Footer
 footer{
 	margin-top: 47px;
 	width: 100%;
+	background: url(../img/footer_bg2.png) center center no-repeat;
 
 	.footer-block{
 		margin: 0 auto;
@@ -11,10 +12,7 @@ footer{
 		max-width: 1135px;
 		height: 293px;
 		.foot_bg{
-			background: url(../img/footer_bg.png) no-repeat;
-			height: 300px;
-			width: 1534px;
-			position: relative;
+			
 			.first_bl{
 				margin-bottom: 65px;
 				.obout{

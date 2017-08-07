@@ -3,10 +3,12 @@
 Content
 **************************************/
 .content{
+	z-index:5;
 	max-width:1135px;
 	margin-top: -100px;
 	margin:0 auto;
 	text-transform: uppercase;
+	position:relative;
 	h1{
 		text-align: center;
 		color:  #322708;
@@ -77,11 +79,12 @@ Content
 Слайдер
 **************************************/
 #carusel{
-	max-width:1100px;
+	max-width:1050px;
 	height:276px;
 	margin: 40px auto;
 	overflow: hidden;
 	position: relative;
+	z-index:5;
 	ul{
 		display: block;
 		height: inherit;
@@ -110,29 +113,34 @@ Content
 			
 		}
 	}
-	.prev, .next, .next_bg{
+
+
+	
+}
+
+
+	.prev, .next{
 				display: block;
 				position: absolute;
 				width: 50px;
-				height: 120px;
+				height: 100px;
 				z-index: 9;
 				cursor: pointer;
 	}
 		.next{
-		background: url(../img/best_next.png) no-repeat center center #fcfcfc;
+		background: url(../img/best_next.png) no-repeat center center;
 		right:0;
+		top:190px;
 	}
 	.prev{
-		background: url(../img/best_prev.png) no-repeat center center #fcfcfc;
+		background: url(../img/best_prev.png) no-repeat center center;
 		right:0;
-		top:120px;
+		top:85px;
 	}
-	.next_bg{
-		background: #fcfcfc;
-		right:0;
-		top:240px;
-	}
-}
+
+/*************************************
+End slider
+**************************************/
 /*************************************
 End content
 **************************************/
