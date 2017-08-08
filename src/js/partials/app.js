@@ -45,14 +45,14 @@ var c_left = Number(obj.children('ul').css('left').replace('px',''));
 
 obj.children('ul').width(w_img * obj.find('li').length);
 
-$('.next').click(function(){
+$('.next_cont').click(function(){
 	obj.children('ul').prepend(obj.find('li:last').clone());
 	obj.find('li:last').remove();
 	obj.children('ul').css({'left':(c_left - w_img) + 'px'});
 	obj.children('ul').animate({'left':c_left}, 500);
 });
 
-$('.prev').click(function(){
+$('.prev_cont').click(function(){
 	obj.children('ul').animate({'left':c_left - w_img}, 500, function () {
 	obj.children('ul').append(obj.find('li:first').clone());
 	obj.find('li:first').remove();
