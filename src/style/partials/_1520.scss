@@ -1,0 +1,33 @@
+@media (max-width: 1520px)
+{
+header{
+	.head_ban{
+		width:469px;
+		height:517px;
+		margin-top:100px;
+		ul{
+			li{
+				img{
+					width: 70%;
+				}
+			}
+		}
+		.prev, .next{
+			width: 10%;
+			top:225px;
+		}
+		.button_hap{
+		ul{
+			top: 155px;
+		}
+	}
+	}
+	.header_bl{
+		.logo_bl{
+		padding-top: 40px;
+	}
+	}
+}
+//end max-width 1700px
+}
+

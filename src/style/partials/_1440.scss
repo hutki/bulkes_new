@@ -1,0 +1,38 @@
+@media (max-width: 1440px)
+{
+header{
+	.header_bl{
+		.h_menu{
+		.h_menu_l{
+			ul{
+				li:first-child{
+				font-size: 25px;
+			}
+				li{
+					font-size: 21px;
+				}
+			}
+		}
+		.h_menu_r{
+			ul{
+				li:first-child{
+				font-size: 25px;
+				}
+				li{
+					font-size: 21px;
+				}
+			}
+		}
+	}
+
+	}
+	
+}
+.signature{
+	img{
+		width: 80%;
+	}
+}
+//end max-width 1440px
+}
+

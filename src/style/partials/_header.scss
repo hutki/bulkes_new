@@ -34,6 +34,30 @@ header {
 		    top: 447px;
 		    z-index: 1;
 	}
+	.button_hap{
+		position:relative;
+		width: 1135px;
+		ul{
+			position:absolute;
+			top: 90px;
+    		left: 65px;
+			li{
+				display: inline-block;
+  				margin: 5px;
+  				width: 15px;
+  				height: 15px;
+ 				background: #f2f2f2;
+  				cursor: pointer;
+  				border-radius: 50%;
+				opacity: 0.6;
+			}
+			.active{
+				background: #3d3d2f;
+				opacity: 1.0;
+			}
+			
+		}
+	}
  	.head_ban{
  		position:absolute;
  		top:0;
@@ -52,22 +76,17 @@ header {
  				display: table;
  			}
  		}
- 			.prev, .next, .next_bg{
+ 			.prev, .next{
 				display: block;
 				position: absolute;
-				width: 62px;
-				height: 61px;
 				z-index: 9;
 				cursor: pointer;
 				top:315px;
 	}
 		.next{
-		background: url(../img/hap_next.png) no-repeat center center;
 		right:0;
-
 	}
 	.prev{
-		background: url(../img/hap_prev.png) no-repeat center center;
 		left:0;
 	}
 	.next_bg{
@@ -83,7 +102,7 @@ header {
 	position: relative;
 	z-index:5;
 
-	#logo_bl{
+	.logo_bl{
 		height: 41px;
 		padding-top: 300px;
 		text-align: center;
@@ -102,11 +121,13 @@ header {
 			color: #151210;
 			margin-right: 20px;
 			text-align: right;
-			ul{
-				li:first-child{
+			h2{
 				font-size: 30px;
 				margin-bottom: 40px;
+				font-weight: normal;
 			}
+			ul{
+				
 				li{
 					font-size: 24px;
 					font-weight: 400;
@@ -129,11 +150,14 @@ header {
 			width: 190px;
 			float: left;
 			color: #151210;
-			ul{
-				li:first-child{
+			h2{
 				font-size: 30px;
 				margin-bottom: 40px;
+				font-weight: normal;
 			}
+			ul{
+				
+			
 				li{
 					font-size: 24px;
 					font-weight: 400;
