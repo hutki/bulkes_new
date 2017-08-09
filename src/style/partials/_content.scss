@@ -7,9 +7,8 @@ Content
 	max-width:1135px;
 	margin-top: -100px;
 	margin:0 auto;
-	text-transform: uppercase;
 	position:relative;
-	h1{
+	h3{
 		text-align: center;
 		color:  #322708;
 		font-size: 30.66px;
@@ -25,7 +24,8 @@ Content
 		.b_left{
 			width: 242px;
 			float: left;
-			p{
+			a{
+				display: block;
 				padding-top:40px;
 				color:  #4f5220;
 				font-size: 40px;
@@ -33,6 +33,7 @@ Content
 				text-align: center;
 				text-transform: uppercase;
 				line-height: 33px;
+				text-decoration: none;
 				span{
 					font-size: 30px;
 				}
@@ -73,6 +74,60 @@ Content
 				top:30px;
 			}
 	}
+	hr {
+    color: #4f5220; /*для IE */
+    background-color:#4f5220; /*для Firefox, Opera, Safari*/
+    border:0px none;
+    height:1px; /* высота 1px IE, Firefox, Opera, Safari */
+    clear:both; /* для очистки, если тег идет после float елемента */
+}
+/*
+Страница товара
+*/
+	.sm{
+		margin-top: 80px;
+		.sm_cont{
+			float: left;
+			width: 74%;
+			margin-right: 1%;
+			.sm_img_r{
+				float: left;
+				width: 33.3333%;
+				text-align: center;
+			}
+			.sm_text{
+				float: left;
+				width: 33.3333%;
+				color:  #565656;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 35px;
+			}
+			.sm_img_l{
+				float: left;
+				width: 33.3333%;
+			}
+			.sm_cont{
+				width: 100%;
+				margin: 25px 0 30px 0;
+				padding-top:20px;
+				color:  #565656;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 30px;
+				border-top: 1px solid #4f5220;
+			}
+		}
+		.sm_thumb{
+			float: left;
+			width: 25%;
+			text-align: right;
+		}
+	}
+/*
+Конец товара
+*/
+
 }
 
 /*************************************
