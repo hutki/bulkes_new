@@ -15,6 +15,7 @@ Content
 		font-weight: 400;
 		line-height: 30px;
 		margin-top: 0;
+		text-transform:uppercase;
 	}
 	.baner{
 		height: 123px;
@@ -158,7 +159,53 @@ Content
 	}
 }
 }
-
+/*
+Оптовым
+*/
+	.opt_text_bg{
+		margin-top:40px;
+		.opt1,.opt2{
+			width: 47%;
+			float: left;
+			p{
+				color:  #626262;
+				font-size: 20px;
+				font-weight: 400;
+				text-align: justify;
+			}
+			p:first-child{
+				margin-bottom: 20px;
+				color:  #78953b;
+				font-size: 24px;
+				font-weight: 400;
+				text-align:center;
+			}
+			p:last-child{
+				color:  #626262;
+				margin-top: 20px;
+				color:  #78953b;
+				font-size: 20px;
+				font-weight: 400;
+				text-align:center;
+			}
+		}
+		
+	}
+/*
+О нас
+*/	
+#obout_tit{
+	color:#828164;
+	line-height:40px;
+	font-size:40px;
+	img{
+		vertical-align: bottom;
+		margin-right: 10px;
+	}
+}
+.obout{
+	margin-top:30px;
+}
 }
 
 /*************************************

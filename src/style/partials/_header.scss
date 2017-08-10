@@ -258,7 +258,13 @@ header {
 						text-align: right;
 						text-transform: uppercase;
 					}
+
 				}
+				li.active{
+						a{
+							color: #ca8a4c;
+						}
+					}
 			}
 		}	
 
