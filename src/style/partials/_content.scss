@@ -127,6 +127,37 @@ Content
 /*
 Конец товара
 */
+/*
+Блог
+*/
+.articles{
+	.article{
+	h3{
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: center;
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color:  #313131;
+
+		}
+	}
+	.summary{
+		color:  #313131;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		margin-bottom: 35px;
+		
+	}
+	.details{
+		text-align: right;
+		display: block;
+	}
+}
+}
 
 }
 

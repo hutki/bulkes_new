@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
 				"tex",
 				"text-decoration"
 			],
@@ -22,10 +26,6 @@
 			[
 				"ma",
 				"margin-right"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"border-r",
@@ -209,10 +209,19 @@
 			}
 		},
 		{
-			"file": "src/js/partials/app.js",
+			"file": "src/blog.html",
 			"settings":
 			{
-				"buffer_size": 2045,
+				"buffer_size": 608,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/template/blog.html",
+			"settings":
+			{
+				"buffer_size": 2316,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -221,7 +230,7 @@
 			"file": "src/style/partials/_content.scss",
 			"settings":
 			{
-				"buffer_size": 2446,
+				"buffer_size": 3798,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -294,11 +303,11 @@
 	],
 	"file_history":
 	[
+		"/home/vit/sites/www/Bulkes_new/src/js/partials/app.js",
 		"/home/vit/sites/www/Bulkes_new/src/index.html",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_header.scss",
 		"/home/vit/sites/www/Bulkes_new/src/template/content.html",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_content.scss",
-		"/home/vit/sites/www/Bulkes_new/src/js/partials/app.js",
 		"/home/vit/sites/www/Регистрал/src/style/partials/_content.scss",
 		"/home/vit/sites/www/Регистрал/src/template/content.html",
 		"/home/vit/sites/www/Bulkes_new/src/template/header.html",
@@ -499,7 +508,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -615,6 +624,19 @@
 								],
 								"scope": "gutter_color"
 							},
+							"gutter_color_1705":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#828164.png",
+								"regions":
+								[
+									[
+										1705,
+										1729
+									]
+								],
+								"scope": "gutter_color"
+							},
 							"gutter_color_454":
 							{
 								"flags": 144,
@@ -710,51 +732,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -764,7 +741,52 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
@@ -776,24 +798,24 @@
 						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/js/partials/app.js",
+					"file": "src/blog.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2045,
+						"buffer_size": 608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1668,
-								1668
+								558,
+								558
 							]
 						],
 						"settings":
@@ -803,27 +825,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										1668,
-										1669
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1657,
-										1658
-									]
 								},
 								"unmatched":
 								{
@@ -831,51 +838,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -885,16 +847,61 @@
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -902,74 +909,452 @@
 				},
 				{
 					"buffer": 2,
+					"file": "src/template/blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "src/style/partials/_content.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2446,
+						"buffer_size": 3798,
 						"regions":
 						{
-							"gutter_color_1015":
+							"gutter_color_1034":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/#4f5220.png",
 								"regions":
 								[
 									[
-										1015,
-										1052
+										1034,
+										1071
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_1861":
+							"gutter_color_1272":
 							{
 								"flags": 144,
-								"icon": "Cache/GutterColor/#000.png",
+								"icon": "Cache/GutterColor/#4f5220.png",
 								"regions":
 								[
 									[
-										1861,
-										1877
+										1272,
+										1303
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_241":
+							"gutter_color_1304":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#4f5220.png",
+								"regions":
+								[
+									[
+										1304,
+										1364
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1762":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#565656.png",
+								"regions":
+								[
+									[
+										1762,
+										1782
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1990":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#565656.png",
+								"regions":
+								[
+									[
+										1990,
+										2010
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2077":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#4f5220.png",
+								"regions":
+								[
+									[
+										2077,
+										2111
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_213":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/#322708.png",
 								"regions":
 								[
 									[
-										241,
-										259
+										213,
+										231
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_484":
+							"gutter_color_2394":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2394,
+										2413
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2416":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2394,
+										2413
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2417":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2394,
+										2413
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2433":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2433,
+										2451
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2455":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2433,
+										2451
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2456":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#313131.png",
+								"regions":
+								[
+									[
+										2433,
+										2451
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2857":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3223,
+										3228
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2879":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2985":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3224,
+										3247
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3055":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3069":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3073":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3215,
+										3231
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3175":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3198":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3213":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3218":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3235":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										3213,
+										3229
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_476":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/#4f5220.png",
 								"regions":
 								[
 									[
-										484,
-										504
+										476,
+										496
 									]
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_876":
+							"gutter_color_895":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/#4f5220.png",
 								"regions":
 								[
 									[
-										876,
-										896
+										895,
+										915
 									]
 								],
 								"scope": "gutter_color"
@@ -978,8 +1363,8 @@
 						"selection":
 						[
 							[
-								1903,
-								1903
+								2333,
+								2333
 							]
 						],
 						"settings":
@@ -989,12 +1374,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										2420,
+										2421
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										2249,
+										2250
+									]
 								},
 								"unmatched":
 								{
@@ -1002,6 +1402,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1012,51 +1442,21 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
@@ -1065,14 +1465,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1305.0,
+						"translation.y": 1939.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "src/template/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -1084,8 +1484,8 @@
 						"selection":
 						[
 							[
-								700,
-								700
+								8,
+								8
 							]
 						],
 						"settings":
@@ -1097,8 +1497,8 @@
 								{
 									"1":
 									[
-										696,
-										699
+										716,
+										722
 									]
 								},
 								"icon":
@@ -1113,8 +1513,8 @@
 								{
 									"1":
 									[
-										40,
-										43
+										1,
+										7
 									]
 								},
 								"unmatched":
@@ -1123,6 +1523,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1133,51 +1563,21 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
@@ -1190,7 +1590,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
