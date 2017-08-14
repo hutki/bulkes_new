@@ -206,6 +206,45 @@ Content
 .obout{
 	margin-top:30px;
 }
+.ajaxSearch_resultsInfos{
+	margin-top:35px;
+    color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 35px
+}
+#grpResult_site_wide{
+	color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 35px;
+    .ajaxSearch_grpResultName{
+    	margin-bottom: 25px;
+    }
+}
+.ajaxSearch_result{
+	.ajaxSearch_resultLink{
+	text-decoration:none;
+	color: #322708;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 15px 0;
+    text-transform: uppercase;
+	}
+	.ajaxSearch_resultExtract{
+color: #313131;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 35px
+	}
+}
+	
+
+
 }
 
 /*************************************

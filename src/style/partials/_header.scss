@@ -5,8 +5,18 @@
 body
 {
 	color:#333;
+	/*
 	background:url(../img/foot_bg.png) left bottom repeat-x;
-	background-color:#fcfcfc;
+	*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,96957d+100 */
+background: #fcfcfc; /* Old browsers */
+background: -moz-linear-gradient(top, #fcfcfc 60%, #96957d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fcfcfc 60%,#96957d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fcfcfc 60%,#96957d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#96957d',GradientType=0 ); /* IE6-9 */
+
+
+
 	font-family: 'MyriadProRegular';
 }
 .clear{
@@ -191,7 +201,11 @@ header {
 			height:37px;
 			background: #fff;
 			margin-top: 10px;
-				
+				fieldset{
+					border:none;
+					margin: 0;
+					padding:0;
+				}
 			::-webkit-input-placeholder{
 				color: #333;
 				text-transform: uppercase;
@@ -267,12 +281,6 @@ header {
 					}
 			}
 		}	
-
-
-
-
-
-
 	}
 }
 
