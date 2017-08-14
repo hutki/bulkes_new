@@ -1,26 +1,59 @@
 @media (max-width: 1700px)
 {
 header{
+	background-size:1700px;
+	.trava{
+			background-size:1700px;
+
+	}
 .head_ban{
-	width:603px;
+	width:503px;
+	top:25px;
 	ul{
 		li{
 			img{
-				width: 90%;
+				width: 75%;
 			}
 		}
 	}
+	.prev, .next{
+			width: 10%;
+			top:260px;
+		}
 }
 .header_bl{
 	.logo_bl{
 	padding-top: 40px;
 }
-}
+.h_menu{
+	.signature{
+		img{
+			width:340px;
+		}
+	}
+
+.h_menu_l, .h_menu_r{
+			
+				h2{
+				font-size: 23px;
+				margin-bottom: 20px;
+			}
+			ul{
+				li{
+					font-size: 19px;
+					line-height: 25px;
+				
+				}
+				
+			}
+		}
+
 
 }
+}
 
 
-
+}
 //end max-width 1700px
 }
 
