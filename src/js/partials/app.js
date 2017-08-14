@@ -32,11 +32,17 @@ obj.find('.prev').click(function(){
 
 //центральный слайдер
 
+
+
 $.fn.carusel = function() {
 var obj = $(this);
 var w_img = obj.find('li').width();
-var c_left = Number(obj.children('ul').css('left').replace('px',''));
-//var w_button = obj.find('.next').width();
+//проверка существования свойства
+var ul_left = obj.children('ul').css('left');
+
+if(typeof(ul_left) != "undefined" && ul_left !== null) {
+    var c_left = Number(obj.children('ul').css('left').replace('px',''));
+}
 
 	$(window).resize(function() {
 			itm = Math.floor(Number($('#carusel').parent().width())  / w_img);
@@ -60,6 +66,9 @@ $('.prev_cont').click(function(){
 	});
 });
 }
+
+
+
 //конец центральный слайдер
 
 }) (jQuery)

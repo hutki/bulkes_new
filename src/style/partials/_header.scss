@@ -30,8 +30,8 @@ header {
 		    height: 416px;
 		    background: url(../img/trava.png) center center no-repeat;
 		    position: absolute;
-		    left: -547px;
-		    top: 447px;
+		    left: -514px;
+		    top: 449px;
 		    z-index: 1;
 	}
 	.button_hap{
@@ -66,12 +66,13 @@ header {
  		overflow: hidden;
  		margin-left: 50px;
  		ul{
- 			width: 1500px;
+ 			
  			display: block;
 			height: inherit;
 			position: absolute;
 			left: 0;
  			li{
+ 				width: 469px;
  				float: left;
  				display: table;
  			}
