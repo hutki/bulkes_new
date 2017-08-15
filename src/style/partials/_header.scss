@@ -5,8 +5,18 @@
 body
 {
 	color:#333;
+	/*
 	background:url(../img/foot_bg.png) left bottom repeat-x;
-	background-color:#fcfcfc;
+	*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,96957d+100 */
+background: #fcfcfc; /* Old browsers */
+background: -moz-linear-gradient(top, #fcfcfc 60%, #96957d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fcfcfc 60%,#96957d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fcfcfc 60%,#96957d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#96957d',GradientType=0 ); /* IE6-9 */
+
+
+
 	font-family: 'MyriadProRegular';
 }
 .clear{
@@ -20,18 +30,19 @@ ul{
 }
 /***************HEADER********************/
 header {
-	max-width: 1920px;
+	max-width: 1857px;
 	margin:0 auto;
-	background: url(../img/header_bg.png) center center no-repeat;
+	position:relative;
+	background: url(../img/header_bg.png) top center no-repeat;
+	background-size:1857px;
 	height: 843px;
 	margin-bottom: -120px;
 	.trava{
 		    width: 100%;
-		    height: 416px;
-		    background: url(../img/trava.png) center center no-repeat;
+		    height: 100%;
+		    background: url(../img/trava.png) top center no-repeat;
 		    position: absolute;
-		    left: -514px;
-		    top: 449px;
+
 		    z-index: 1;
 	}
 	.button_hap{
@@ -98,7 +109,7 @@ header {
  	}
   .header_bl{
 	max-width: 1135px;
-	height: 585px;
+	height: 590px;
 	margin: 0 auto;
 	position: relative;
 	z-index:5;
@@ -116,19 +127,15 @@ header {
 			text-align: right;
 			margin: 10px 0 20px;
 		}
-		.h_menu_l{
-			width: 265px;
+		.h_menu_l, .h_menu_r{
 			float: left; 
 			color: #151210;
-			margin-right: 20px;
-			text-align: right;
-			h2{
+				h2{
 				font-size: 30px;
 				margin-bottom: 40px;
 				font-weight: normal;
 			}
 			ul{
-				
 				li{
 					font-size: 24px;
 					font-weight: 400;
@@ -145,40 +152,17 @@ header {
 					color:#ffffff;
 				}
 			}
-			
+		}
+		.h_menu_l{
+			width: 265px;
+			margin-right: 20px;
+			text-align: right;
 		}
 		.h_menu_r{
 			width: 190px;
-			float: left;
-			color: #151210;
-			h2{
-				font-size: 30px;
-				margin-bottom: 40px;
-				font-weight: normal;
-			}
-			ul{
-				
-			
-				li{
-					font-size: 24px;
-					font-weight: 400;
-					line-height: 30px;
-					a{
-						text-decoration: none;
-						color: inherit;
-						&:hover{
-							color:#fff;
-						}
-					}
-				}
-				.active a{
-					color:#ffffff;
-				}
-			}
-				}
+		}
 	}
   }
-
 	.mid_menu{
 		width: 1135px;
 		margin:0 auto;
@@ -192,7 +176,11 @@ header {
 			height:37px;
 			background: #fff;
 			margin-top: 10px;
-				
+				fieldset{
+					border:none;
+					margin: 0;
+					padding:0;
+				}
 			::-webkit-input-placeholder{
 				color: #333;
 				text-transform: uppercase;
@@ -268,12 +256,6 @@ header {
 					}
 			}
 		}	
-
-
-
-
-
-
 	}
 }
 
