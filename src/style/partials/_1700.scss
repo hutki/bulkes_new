@@ -1,13 +1,8 @@
 @media (max-width: 1700px)
 {
 header{
-	background-size:1700px;
-	height: 760px;
-	.trava{
-			background-size:1700px;
-
-	}
-.head_ban{
+	height: 630px;
+	.head_ban{
 	width:469px;
 	top:75px;
 	ul{
@@ -23,7 +18,6 @@ header{
 		}
 }
 .header_bl{
-	height:530px;
 	.logo_bl{
 	padding-top: 40px;
 }
@@ -34,21 +28,7 @@ header{
 		}
 	}
 
-.h_menu_l, .h_menu_r{
-			
-				h2{
-				font-size: 23px;
-				margin-bottom: 20px;
-			}
-			ul{
-				li{
-					font-size: 19px;
-					line-height: 25px;
-				
-				}
-				
-			}
-		}
+
 
 }
 }

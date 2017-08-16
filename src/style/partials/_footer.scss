@@ -4,29 +4,31 @@ Footer
 footer{
 	margin-top: 47px;
 	width: 100%;
+	min-width:1135px;
 	background: url(../img/footer_bg2.png) center center no-repeat;
 
 	.footer-block{
 		margin: 0 auto;
-
-		max-width: 1135px;
-		height: 293px;
+		width: 1105px;
+		padding: 0 15px;
+		height: 215px;
 		.foot_bg{
 			
 			.first_bl{
-				margin-bottom: 65px;
+				margin-bottom: 55px;
 				.obout{
-				padding: 70px 0 0 100px;
+				padding: 45px 0 0 50px;
 				float: left;
 				a{
 					width: 160px;
 					display: block;
 					text-decoration: none;
 					color:  #ffffff;
-					font-size: 57.35px;
+					font-size: 24px;
 					font-weight: 400;
-					line-height: 55px;
+					line-height: 25px;
 					text-align: center;
+					text-transform: uppercase;
 					img{
 						vertical-align: bottom;
 					}
@@ -43,7 +45,7 @@ footer{
 					display: block;
 					text-decoration: none;
 					color:  #ffffff;
-					font-size: 57.35px;
+					font-size: 32px;
 					font-weight: 400;
 					line-height: 12.876px;
 					text-align: center;
@@ -52,11 +54,11 @@ footer{
 			}
 			.sec_bl{
 				.inf{
-				width: 322px;
-				margin-right: 280px;
+				width: 215px;
+				margin: 15px 387px 0 0;
 				float: left;
 				color:  #606060;
-				font-size: 18px;
+				font-size: 12px;
 				font-weight: 400;
 				text-align: left;
 				
@@ -92,7 +94,7 @@ footer{
 					color:  #ffffff;
 					font-size: 18px;
 					font-weight: 400;
-					padding: 13px 20px;
+					padding: 10px 18px;
 
 					background:#828164;
 				}

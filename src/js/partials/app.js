@@ -14,7 +14,6 @@ var w_button = obj.find('.next').width();
 */
 obj.children('ul').width(w_img * obj.find('li').length);
 
-obj.children('ul').prepend(obj.find('li:last').clone());
 obj.find('.next').click(function(){
 	obj.children('ul').animate({'left':c_left - w_img}, 700, function () {
 	obj.children('ul').append(obj.find('li:first').clone());
@@ -23,8 +22,8 @@ obj.find('.next').click(function(){
 });
 
 });
-
 obj.find('.prev').click(function(){
+	
 	obj.children('ul').prepend(obj.find('li:last').clone());
 	obj.find('li:last').remove();
 	obj.children('ul').css({'left':(c_left - w_img) + 'px'});
@@ -35,6 +34,8 @@ obj.find('.prev').click(function(){
 }
 
 //центральный слайдер
+
+
 
 $.fn.carusel = function() {
 var obj = $(this);

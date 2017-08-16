@@ -27,12 +27,13 @@ ul{
 }
 /***************HEADER********************/
 header {
-	max-width: 1857px;
+	max-width: 1920px;
+	min-width:1135px;
 	margin:0 auto;
 	position:relative;
 	background: url(../img/header_bg.png) top center no-repeat;
-	background-size:1857px;
-	height: 843px;
+	background-size:1920px;
+	height: 658px;
 	margin-bottom: -120px;
 	.trava{
 		    width: 100%;
@@ -106,37 +107,41 @@ header {
  	}
   .header_bl{
 	max-width: 1135px;
-	height: 590px;
+	height: 390px;
 	margin: 0 auto;
 	position: relative;
 	z-index:5;
 
 	.logo_bl{
-		height: 41px;
-		padding-top: 300px;
+		height: 31px;
+		padding-top: 200px;
 		text-align: center;
 	}
 	.h_menu{
 		position: absolute;
-		right: 0;
-		top:0;
+		right: 15px;
+		top:45px;
+		/*
 		.signature{
 			text-align: right;
 			margin: 10px 0 20px;
 		}
+		*/
 		.h_menu_l, .h_menu_r{
 			float: left; 
 			color: #151210;
 				h2{
-				font-size: 30px;
-				margin-bottom: 40px;
+				font-size: 23px;
+				margin-bottom: 15px;
 				font-weight: normal;
+				line-height: 22px;
+
 			}
 			ul{
 				li{
-					font-size: 24px;
+					font-size: 18px;
 					font-weight: 400;
-					line-height: 30px;
+					line-height: 23px;
 					a{
 						text-decoration: none;
 						color: inherit;
@@ -156,13 +161,14 @@ header {
 			text-align: right;
 		}
 		.h_menu_r{
-			width: 190px;
+			width: 145px;
 		}
 	}
   }
 	.mid_menu{
-		width: 1135px;
+		width: 1105px;
 		margin:0 auto;
+		padding: 0 15px;
 		text-align: right;
 		z-index:5;
 		position:relative;
@@ -228,19 +234,18 @@ header {
 			}
 		}
 		nav{
-			margin:30px 15px 0 0;
+			margin:20px 5px 0 0;
 			
 			ul{
 				li{
 					*display: inline !important;
 					display: inline-block;
-					padding: 0 15px;
+					padding: 0 7px;
 					a{
 						text-decoration: none;
 						color:  #151210;
-						font-size: 19.59px;
+						font-size: 14px;
 						font-weight: 400;
-						line-height: 30px;
 						text-align: right;
 						text-transform: uppercase;
 					}
