@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
 				"text",
 				"text-align"
 			],
@@ -12,32 +36,12 @@
 				"text-decoration"
 			],
 			[
-				"pa",
-				"padding-top"
-			],
-			[
-				"mar",
-				"margin-right"
-			],
-			[
-				"te",
-				"text-transform"
-			],
-			[
-				"ma",
-				"margin-right"
-			],
-			[
 				"border-r",
 				"border-right"
 			],
 			[
 				"fo",
 				"font-size"
-			],
-			[
-				"di",
-				"div\tTag"
 			],
 			[
 				"marg",
@@ -200,21 +204,22 @@
 	"buffers":
 	[
 		{
-			"file": "src/style/partials/_header.scss",
+			"file": "/home/vit/sites/www/forum.loc/config.php",
 			"settings":
 			{
-				"buffer_size": 4672,
+				"buffer_size": 377,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/template/content.html",
+			"contents": "Searching 115 files for \"profile\"\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/mcp_post.html:\n   14  \t<tr>\n   15  \t\t<td class=\"row1\" width=\"20%\"><b class=\"gen\">{L_REPORTER}{L_COLON} </b></td>\n   16: \t\t<td class=\"row2\" width=\"80%\"><span class=\"gen\"<!-- IF REPORTER_COLOUR --> style=\"font-weight: bold; color: {REPORTER_COLOUR};\"<!-- ENDIF -->>{REPORTER_NAME}</span> &nbsp; <span class=\"gen\">[ <!-- IF U_VIEW_REPORTER_PROFILE --><a href=\"{U_VIEW_REPORTER_PROFILE}\">{L_READ_PROFILE}</a><!-- ENDIF --><!-- IF S_USER_NOTES --><!-- IF U_VIEW_REPORTER_PROFILE --> | <!-- ENDIF --><a href=\"{U_MCP_REPORTER_NOTES}\">{L_VIEW_NOTES}</a> | <a href=\"{U_MCP_WARN_REPORTER}\">{L_WARN_USER}</a><!-- ENDIF --> ]</span></td>\n   17  \t</tr>\n   18  \t<tr>\n   ..\n   60  <tr>\n   61  \t<td class=\"row1\" width=\"20%\"><b class=\"gen\"><!-- IF S_PM -->{L_PM_FROM}<!-- ELSE -->{L_POSTER}<!-- ENDIF -->{L_COLON} </b></td>\n   62: \t<td class=\"row2\" width=\"80%\"><span class=\"gen\"<!-- IF POST_AUTHOR_COLOUR --> style=\"font-weight: bold; color: {POST_AUTHOR_COLOUR}\"<!-- ENDIF -->>{POST_AUTHOR}</span><span class=\"gen\"> &nbsp; [ <!-- IF U_POST_AUTHOR --><a href=\"{U_POST_AUTHOR}\">{L_READ_PROFILE}</a><!-- ENDIF --><!-- IF S_USER_NOTES --><!-- IF U_POST_AUTHOR --> | <!-- ENDIF --><a href=\"{U_MCP_USER_NOTES}\">{L_VIEW_NOTES}</a> <!-- IF U_MCP_WARN_USER -->| <a href=\"{U_MCP_WARN_USER}\">{L_WARN_USER}</a><!-- ENDIF --><!-- ENDIF --> ]</span></td>\n   63  </tr>\n   64  <!-- IF S_CAN_VIEWIP -->\n   ..\n  181  \t\t<!-- BEGIN userrow -->\n  182  \t\t\t<!-- IF userrow.S_ROW_COUNT is even --><tr class=\"row1\"><!-- ELSE --><tr class=\"row2\"><!-- ENDIF -->\n  183: \t\t\t\t<td><span class=\"gen\"><!-- IF userrow.U_PROFILE --><a href=\"{userrow.U_PROFILE}\">{userrow.USERNAME}</a><!-- ELSE -->{userrow.USERNAME}<!-- ENDIF --> [ {userrow.NUM_POSTS} {userrow.L_POST_S} ]</span></td>\n  184  \t\t\t\t<td align=\"center\"><a href=\"{userrow.U_SEARCHPOSTS}\" class=\"imageset\">{SEARCH_IMG}</a></td>\n  185  \t\t\t</tr>\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/memberlist_body.html:\n   70  \t\t<td class=\"gen\" align=\"center\"><!-- EVENT memberlist_body_rank_prepend --><!-- IF memberrow.RANK_IMG -->{memberrow.RANK_IMG}<!-- ELSE -->{memberrow.RANK_TITLE}<!-- ENDIF --><!-- EVENT memberlist_body_rank_append --></td>\n   71  \t\t<td class=\"gen\" align=\"center\">&nbsp;<!-- IF memberrow.U_EMAIL --><a href=\"{memberrow.U_EMAIL}\" class=\"imageset\">{EMAIL_IMG}</a><!-- ENDIF -->&nbsp;</td>\n   72: \t\t<!-- IF memberrow.S_PROFILE_FIELD1 -->\n   73: \t\t\t<!-- Use a construct like this to include admin defined profile fields. Replace FIELD1 with the name of your field. -->\n   74: \t\t\t<td class=\"gen\" align=\"center\">&nbsp;{memberrow.PROFILE_FIELD1_VALUE}</td>\n   75  \t\t<!-- ENDIF -->\n   76  \t\t<!-- IF S_IN_SEARCH_POPUP and not S_SELECT_SINGLE --><td align=\"center\"><input type=\"checkbox\" class=\"radio\" name=\"user\" value=\"{memberrow.USERNAME}\" /></td><!-- ENDIF -->\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/memberlist_view.html:\n    5  \t<!-- EVENT memberlist_view_content_prepend -->\n    6  \n    7: \t<form method=\"post\" action=\"{S_PROFILE_ACTION}\">\n    8  \n    9  \t<table class=\"tablebg\" width=\"100%\" cellspacing=\"1\">\n   10  \t<tr>\n   11: \t\t<th colspan=\"2\" nowrap=\"nowrap\">{L_VIEWING_PROFILE}</th>\n   12  \t</tr>\n   13  \t<tr>\n   ..\n  134  \t\t\t<!-- EVENT memberlist_view_contact_custom_fields_before -->\n  135  \t\t\t<!-- BEGIN custom_fields -->\n  136: \t\t\t\t<!-- IF custom_fields.S_PROFILE_CONTACT -->\n  137  \t\t\t\t<tr>\n  138: \t\t\t\t\t<td class=\"gen\" align=\"{S_CONTENT_FLOW_END}\" nowrap=\"nowrap\">{custom_fields.PROFILE_FIELD_NAME}{L_COLON} </td>\n  139: \t\t\t\t\t<!-- IF custom_fields.PROFILE_FIELD_CONTACT -->\n  140: \t\t\t\t\t\t<td><a href=\"{custom_fields.PROFILE_FIELD_CONTACT}\"><span class=\"imageset {custom_fields.PROFILE_FIELD_IDENT}-icon\">{custom_fields.PROFILE_FIELD_DESC}</span></a></td>\n  141  \t\t\t\t\t<!-- ELSE -->\n  142: \t\t\t\t\t\t<td><b class=\"genmed\">{custom_fields.PROFILE_FIELD_VALUE}</b></td>\n  143  \t\t\t\t\t<!-- ENDIF -->\n  144  \t\t\t\t</tr>\n  ...\n  160  \t\t\t</tr>\n  161  \t\t\t<!-- ENDIF -->\n  162: \t\t\t<!-- IF S_PROFILE_FIELD1 -->\n  163: \t\t\t\t<!-- Use a construct like this to include admin defined profile fields. Replace FIELD1 with the name of your field. -->\n  164  \t\t\t\t<tr>\n  165: \t\t\t\t\t<td class=\"gen\" align=\"{S_CONTENT_FLOW_END}\" nowrap=\"nowrap\">{PROFILE_FIELD1_NAME}{L_COLON} </td>\n  166: \t\t\t\t\t<td><b class=\"genmed\">{PROFILE_FIELD1_VALUE}</b></td>\n  167  \t\t\t\t</tr>\n  168  \t\t\t<!-- ENDIF -->\n  169  \t\t\t<!-- EVENT memberlist_view_non_contact_custom_fields_before -->\n  170  \t\t\t<!-- BEGIN custom_fields -->\n  171: \t\t\t\t<!-- IF not custom_fields.S_PROFILE_CONTACT -->\n  172  \t\t\t\t<tr>\n  173: \t\t\t\t\t<td class=\"gen\" align=\"{S_CONTENT_FLOW_END}\" nowrap=\"nowrap\">{custom_fields.PROFILE_FIELD_NAME}{L_COLON} </td>\n  174: \t\t\t\t\t<td><b class=\"genmed\">{custom_fields.PROFILE_FIELD_VALUE}</b></td>\n  175  \t\t\t\t</tr>\n  176  \t\t\t\t<!-- ENDIF -->\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/overall_header.html:\n  155  \t\t\t<td style=\"padding-right: 5px\">\n  156  \t\t\t<a href=\"https://www.instagram.com/formagicwebforum/\"><img src=\"{T_THEME_PATH}/images/insta.png\" style=\"padding-bottom: 5px\"></a>\n  157: \t\t\t<a href=\"https://www.facebook.com/profile.php?id=100012240518670\"><img src=\"{T_THEME_PATH}/images/facebook.png\" style=\"padding-bottom: 5px\"></a>\n  158  \t\t\t<a href=\"https://vk.com/formagicforum\"><img src=\"{T_THEME_PATH}/images/vk.png\" style=\"padding-bottom: 5px\"></a>\n  159  \t\t\t</td>\n  ...\n  233  \t\t\t\t<!-- IF not S_IS_BOT -->\n  234  \t\t\t\t\t<!-- IF S_DISPLAY_MEMBERLIST -->&nbsp; &nbsp;<a href=\"{U_MEMBERLIST}\"><img src=\"{T_THEME_PATH}/images/icon_mini_members.gif\" width=\"12\" height=\"13\" alt=\"*\" /> {L_MEMBERLIST}</a><!-- ENDIF -->\n  235: \t\t\t\t\t<!-- IF S_USER_LOGGED_IN -->&nbsp; &nbsp;<a href=\"{U_PROFILE}\"><img src=\"{T_THEME_PATH}/images/icon_mini_profile.gif\" width=\"12\" height=\"13\" alt=\"*\" /> {L_PROFILE}</a><!-- ENDIF -->\n  236  \t\t\t\t<!-- ENDIF -->\n  237  \t\t\t\t<!-- EVENT overall_header_navigation_append -->\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_pm_history.html:\n   63  \t\t\t<td>\n   64  \t\t\t\t<div class=\"gensmall\" style=\"float: {S_CONTENT_FLOW_BEGIN};\">\n   65: \t\t\t\t\t&nbsp;<!-- IF history_row.U_PROFILE --><a href=\"{history_row.U_PROFILE}\" class=\"imageset\">{PROFILE_IMG}</a> <!-- ENDIF --> \n   66  \t\t\t\t\t<!-- IF history_row.U_EMAIL --><a href=\"{history_row.U_EMAIL}\" class=\"imageset\">{EMAIL_IMG}</a> <!-- ENDIF -->&nbsp;\n   67  \t\t\t\t</div>\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_pm_viewmessage.html:\n  107  \t<td>\n  108  \t\t<div class=\"gensmall\" style=\"float: {S_CONTENT_FLOW_BEGIN};\">\n  109: \t\t\t&nbsp;<!-- IF U_MESSAGE_AUTHOR --><a href=\"{U_MESSAGE_AUTHOR}\" class=\"imageset\">{PROFILE_IMG}</a> <!-- ENDIF -->\n  110  \t\t\t<!-- IF U_EMAIL --><a href=\"{U_EMAIL}\" class=\"imageset\">{EMAIL_IMG}</a> <!-- ENDIF -->\n  111  \t\t&nbsp;</div>\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_profile_autologin_keys.html:\n   13  \n   14  <tr>\n   15: \t<td colspan=\"4\" class=\"row1\">{L_PROFILE_AUTOLOGIN_KEYS}</td>\n   16  </tr>\n   17  <tr>\n   ..\n   30  <!-- BEGINELSE -->\n   31  \t<tr>\n   32: \t\t<td colspan=\"4\" class=\"row1\" style=\"text-align: center\">{L_PROFILE_NO_AUTOLOGIN_KEYS}</td>\n   33  \t</tr>\n   34  <!-- END sessions -->\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_profile_profile_info.html:\n   11  <!-- ENDIF -->\n   12  <tr>\n   13: \t<td class=\"row1\" colspan=\"2\"><span class=\"gensmall\">{L_PROFILE_INFO_NOTICE}</span></td>\n   14  </tr>\n   15: <!-- EVENT ucp_profile_profile_info_before -->\n   16  <!-- IF S_JABBER_ENABLED -->\n   17  <tr>\n   ..\n   26  \t</tr>\n   27  <!-- ENDIF -->\n   28: <!-- BEGIN profile_fields -->\n   29  \t<tr>\n   30  \t\t<td class=\"row1\" width=\"35%\">\n   31: \t\t\t<b class=\"genmed\">{profile_fields.LANG_NAME}{L_COLON} </b>\n   32: \t\t\t<!-- IF profile_fields.S_REQUIRED --><b>*</b><!-- ENDIF -->\n   33: \t\t\t<!-- IF profile_fields.LANG_EXPLAIN --><br /><span class=\"gensmall\">{profile_fields.LANG_EXPLAIN}</span><!-- ENDIF -->\n   34  \t\t</td>\n   35: \t\t<td class=\"row2\">{profile_fields.FIELD}<!-- IF profile_fields.ERROR --><br /><span class=\"gensmall error\">{profile_fields.ERROR}</span><!-- ENDIF --></td>\n   36  \t</tr>\n   37: <!-- END profile_fields -->\n   38: <!-- EVENT ucp_profile_profile_info_after -->\n   39  <tr>\n   40  \t<td class=\"cat\" colspan=\"2\" align=\"center\">{S_HIDDEN_FIELDS}<input class=\"btnmain\" type=\"submit\" name=\"submit\" value=\"{L_SUBMIT}\" />&nbsp;&nbsp;<input class=\"btnlite\" type=\"reset\" value=\"{L_RESET}\" name=\"reset\" /></td>\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_profile_reg_details.html:\n   15  \t</tr>\n   16  <!-- ENDIF -->\n   17: <!-- EVENT ucp_profile_register_details_before -->\n   18  <tr>\n   19  \t<td class=\"row1\" width=\"35%\"><b class=\"genmed\">{L_USERNAME}{L_COLON} </b><br /><span class=\"gensmall\">{L_USERNAME_EXPLAIN}</span></td>\n   ..\n   34  \t</tr>\n   35  <!-- ENDIF -->\n   36: <!-- EVENT ucp_profile_register_details_after -->\n   37  <tr>\n   38  \t<th colspan=\"2\">{L_CONFIRM_CHANGES}</th>\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_register.html:\n   61  <!-- INCLUDE timezone_option.html -->\n   62  \n   63: <!-- EVENT ucp_register_profile_fields_before -->\n   64: <!-- IF .profile_fields -->\n   65  \t<tr>\n   66  \t\t<td class=\"row2\" colspan=\"2\"><span class=\"gensmall\">{L_ITEMS_REQUIRED}</span></td>\n   67  \t</tr>\n   68: <!-- BEGIN profile_fields -->\n   69  \t<tr>\n   70  \t\t<td class=\"row1\" width=\"35%\">\n   71: \t\t\t<b class=\"genmed\">{profile_fields.LANG_NAME}{L_COLON} </b>\n   72: \t\t\t<!-- IF profile_fields.S_REQUIRED --><b>*</b><!-- ENDIF -->\n   73: \t\t\t<!-- IF profile_fields.LANG_EXPLAIN --><br /><span class=\"gensmall\">{profile_fields.LANG_EXPLAIN}</span><!-- ENDIF -->\n   74  \t\t</td>\n   75: \t\t<td class=\"row2\">{profile_fields.FIELD}<!-- IF profile_fields.ERROR --><br /><span class=\"gensmall error\">{profile_fields.ERROR}</span><!-- ENDIF --></td>\n   76  \t</tr>\n   77  \t\n   78: <!-- END profile_fields -->\n   79  <!-- ENDIF -->\n   80: <!-- EVENT ucp_register_profile_fields_after -->\n   81  \t\t<!-- IF CAPTCHA_TEMPLATE -->\n   82  \t\t<!-- INCLUDE {CAPTCHA_TEMPLATE} -->\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_remind.html:\n    3  <div align=\"center\">\n    4  \n    5: <form action=\"{S_PROFILE_ACTION}\" method=\"post\">\n    6  \n    7  <table class=\"tablebg\" width=\"50%\" cellspacing=\"1\" cellpadding=\"4\" border=\"0\">\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/ucp_resend.html:\n    3  <div align=\"center\">\n    4  \n    5: <form action=\"{S_PROFILE_ACTION}\" method=\"post\">\n    6  \n    7  <table class=\"tablebg\" width=\"50%\" cellspacing=\"1\" cellpadding=\"4\" border=\"0\">\n\n/home/vit/Загрузки/форум 29.08/subsilver2/template/viewtopic_body.html:\n  188  \t\t<!-- IF postrow.S_ROW_COUNT is even --><tr class=\"row1\"><!-- ELSE --><tr class=\"row2\"><!-- ENDIF -->\n  189  \n  190: \t\t\t<td valign=\"top\" class=\"profile\">\n  191  \t\t\t\t<table cellspacing=\"4\" align=\"center\" width=\"150\">\n  192  \t\t\t<!-- IF postrow.ONLINE_IMG -->\n  ...\n  228  \t\t\t\t\t<!-- IF postrow.POSTER_WARNINGS --><br /><b>{L_WARNINGS}{L_COLON}</b><span style=\"color: red\"> {postrow.POSTER_WARNINGS}</span><!-- ENDIF -->\n  229  \n  230: \t\t\t\t\t<!-- IF postrow.S_PROFILE_FIELD1 -->\n  231: \t\t\t\t\t\t<!-- Use a construct like this to include admin defined profile fields. Replace FIELD1 with the name of your field. -->\n  232: \t\t\t\t\t\t<br /><b>{postrow.PROFILE_FIELD1_NAME}{L_COLON}</b> {postrow.PROFILE_FIELD1_VALUE}\n  233  \t\t\t\t\t<!-- ENDIF -->\n  234  \n  235  \t\t\t\t\t<!-- EVENT viewtopic_body_postrow_custom_fields_before -->\n  236  \t\t\t\t\t<!-- BEGIN custom_fields -->\n  237: \t\t\t\t\t\t<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->\n  238: \t\t\t\t\t\t<br /><b>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</b> {postrow.custom_fields.PROFILE_FIELD_VALUE}\n  239  \t\t\t\t\t\t<!-- ENDIF -->\n  240  \t\t\t\t\t<!-- END custom_fields -->\n  ...\n  348  \n  349  \t\t\t<!-- EVENT viewtopic_body_postrow_back2top_before -->\n  350: \t\t\t<td class=\"profile\"><!-- EVENT viewtopic_body_postrow_back2top_prepend --><strong><a href=\"#wrapheader\">{L_BACK_TO_TOP}</a></strong><!-- EVENT viewtopic_body_postrow_back2top_append --></td>\n  351  \t\t\t<!-- EVENT viewtopic_body_postrow_back2top_after -->\n  352  \t\t\t<td>\n  353  \t\t\t\t<div class=\"gensmall\" style=\"float: {S_CONTENT_FLOW_BEGIN};\">\n  354: \t\t\t\t\t&nbsp;<!-- IF postrow.U_POST_AUTHOR --><a href=\"{postrow.U_POST_AUTHOR}\" class=\"imageset\">{PROFILE_IMG}</a><!-- ENDIF -->\n  355  \t\t\t\t\t<!-- IF postrow.U_PM --><a href=\"{postrow.U_PM}\" class=\"imageset\">{PM_IMG}</a><!-- ENDIF -->\n  356  \t\t\t\t\t<!-- IF postrow.U_EMAIL --><a href=\"{postrow.U_EMAIL}\" class=\"imageset\">{EMAIL_IMG}</a><!-- ENDIF -->\n\n76 matches across 13 files\n",
 			"settings":
 			{
-				"buffer_size": 1220,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"buffer_size": 12471,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
@@ -276,20 +281,47 @@
 	],
 	"file_history":
 	[
-		"/home/vit/sites/www/Bulkes_new/src/style/partials/_footer.scss",
-		"/home/vit/sites/www/Bulkes_new/src/template/footer.html",
+		"/home/vit/Загрузки/форум 29.08/zz.sql",
+		"/home/vit/Загрузки/форум 29.08/backup_1504033328_0780a061b1cb5b9a.sql",
+		"/home/vit/sites/www/forum.loc/cache/sql_9dc91161799801b44926b824ccc5cf51.php",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_content.scss",
+		"/home/vit/sites/www/Bulkes_new/src/template/footer.html",
+		"/home/vit/sites/www/Bulkes_new/src/style/partials/_footer.scss",
+		"/home/vit/sites/www/Bulkes_new/src/js/partials/app.js",
+		"/home/vit/sites/www/Bulkes_new/src/style/partials/_header.scss",
+		"/home/vit/sites/www/Регистрал/src/js/partials/app.js",
+		"/home/vit/sites/www/whitelightmodels/Разработка/style_a.css",
+		"/home/vit/sites/www/Bulkes_new/src/template/kupit.html",
+		"/home/vit/sites/www/Регистрал/src/style/partials/_content.scss",
+		"/home/vit/sites/www/Bulkes_new/src/template/form.html",
+		"/home/vit/sites/www/Bulkes_new/src/kupit.html",
+		"/home/vit/sites/www/Bulkes_new/src/form.html",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/tpl/index.html",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/handler/index/setting.php",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/handler/index.php",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/symix.eform.js",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/handler/index/symix.eform.php",
+		"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/tpl/form_one_click.html",
+		"/home/vit/Загрузки/ufreg взлом/index.php",
+		"/home/vit/Загрузки/ufreg взлом/index.html.bak.bak",
+		"/home/vit/sites/www/ufreg.ru.com/assets/index.html",
+		"/home/vit/Загрузки/ufreg взлом/siteCache.idx.php",
+		"/home/vit/Загрузки/ufreg взлом/sitePublishing.idx.php",
+		"/home/vit/Загрузки/ufreg взлом/siteManager.php",
+		"/home/vit/Загрузки/ufreg взлом/.htaccess",
+		"/home/vit/Загрузки/ufreg взлом/siteHostnames.php",
+		"/home/vit/Загрузки/ufreg взлом/docid_1.pageCache.php",
+		"/home/vit/Загрузки/ufreg взлом/index.html",
+		"/home/vit/Загрузки/ufreg взлом/index-ajax.php",
+		"/home/vit/sites/www/ufreg.ru.com/index.php",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_1440.scss",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_1520.scss",
 		"/home/vit/sites/www/Bulkes_new/src/style/partials/_1700.scss",
 		"/home/vit/sites/www/Bulkes_new/src/index.html",
-		"/home/vit/sites/www/Bulkes_new/src/style/partials/_header.scss",
 		"/home/vit/sites/www/Bulkes_new/src/blog.html",
 		"/home/vit/sites/www/Bulkes_new/src/template/blog.html",
-		"/home/vit/sites/www/Bulkes_new/src/js/partials/app.js",
 		"/home/vit/sites/setting.php",
 		"/home/vit/sites/www/Bulkes_new/src/template/content.html",
-		"/home/vit/sites/www/Регистрал/src/style/partials/_content.scss",
 		"/home/vit/sites/www/Регистрал/src/template/content.html",
 		"/home/vit/sites/www/Bulkes_new/src/template/header.html",
 		"/home/vit/sites/www/Регистрал/src/style/partials/_footer.scss",
@@ -302,7 +334,6 @@
 		"/home/vit/sites/www/whitelightmodels/Разработка/form_snippet.php",
 		"/home/vit/sites/www/Времянка/overall_header.html",
 		"/home/vit/sites/www/whitelightmodels/Разработка/overall_header.html",
-		"/home/vit/sites/www/whitelightmodels/Разработка/style_a.css",
 		"/home/vit/sites/www/whitelightmodels/Разработка/cvs_pull.php",
 		"/home/vit/Загрузки/data_export (54).csv",
 		"/home/vit/Загрузки/data_export (53).csv",
@@ -320,7 +351,6 @@
 		"/home/vit/sites/www/Регистрал/src/template/prajs_table.html",
 		"/home/vit/sites/www/Регистрал/src/style/partials/_610.scss",
 		"/home/vit/Документы/untitled.html",
-		"/home/vit/sites/www/Регистрал/src/js/partials/app.js",
 		"/home/vit/sites/www/Времянка/home.php",
 		"/home/vit/sites/www/Регистрал/src/prajs.html",
 		"/home/vit/sites/www/Регистрал/src/template/poisk_tpl.html",
@@ -378,32 +408,7 @@
 		"/home/vit/sites/www/Регистрал/src/style/partials/header.scss",
 		"/home/vit/sites/www/Регистрал/src/style/partials/footer.scss",
 		"/home/vit/sites/www/karusel/index.html",
-		"/home/vit/sites/www/Регистрал/src/style/partials/content.scss",
-		"/home/vit/sites/www/Бэкап/Регистрал_files/main.css",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/style.css",
-		"/home/vit/sites/www/wp.loc/wp-content/themes/eddiemachado-bones-78ee6a7/library/scss/breakpoints/_768up.scss",
-		"/home/vit/sites/www/build/index.html",
-		"/home/vit/sites/www/Регистрал/build/index.html",
-		"/home/vit/Загрузки/browser-sync-master/lib/tunnel.js",
-		"/home/vit/sites/www/Регистрал/src/style/partials/app.scss",
-		"/home/vit/sites/www/Регистрал/package.json",
-		"/home/vit/sites/www/Регистрал/bower.json",
-		"/run/user/1000/gvfs/mtp:host=%5Busb%3A001%2C006%5D/SD-карта/Регистрал/package.json",
-		"/run/user/1000/gvfs/mtp:host=%5Busb%3A001%2C006%5D/SD-карта/Регистрал/bower.json",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/product.tpl",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/index.tpl",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/ProductView.php",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/View.php",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/ProductsView.php",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/products.tpl",
-		"/home/vit/sites/www/julietelle.ru/add text price/Бежевые валеночки_files/symix.js",
-		"/home/vit/sites/www/julietelle.ru/Обм серв/map.tpl",
-		"/home/vit/sites/www/julietelle.ru 1/Популярные_files/style.css",
-		"/home/vit/sites/www/стр/novinki_files/style.css",
-		"/home/vit/sites/www/стр/novinki.html",
-		"/home/vit/.local/share/Trash/files/╨Ю ╨║╨╛╨╝╨┐╨░╨╜╨╕╨╕ _ ╨б╨┤╨░╨╝ ╨╛╤В╤З╨╡╤В_files/style.css",
-		"/home/vit/Загрузки/Сайт/Популярные_files/style.css",
-		"/home/vit/sites/www/test/index.html"
+		"/home/vit/sites/www/Регистрал/src/style/partials/content.scss"
 	],
 	"find":
 	{
@@ -411,9 +416,14 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/home/vit/Загрузки/форум 29.08/subsilver2/template",
+			"/home/vit/sites/www/forum.loc/cache",
+			"/home/vit/sites/www/Бэкап/ufreg.ru 21.08",
+			"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform",
+			"/home/vit/sites/www/Bulkes_new/Исходники/symix.eform/tpl"
 		]
 	},
 	"find_state":
@@ -421,6 +431,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"class=\"profile",
+			"profile",
+			"cd70219_forum",
+			"png",
+			"block_5",
+			"bak.bak",
+			"bak",
+			"impo",
+			"im",
+			"phone",
 			"price_block",
 			"865",
 			"search",
@@ -481,583 +501,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/style/partials/_header.scss",
+					"file": "/home/vit/sites/www/forum.loc/config.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4672,
+						"buffer_size": 377,
 						"regions":
 						{
-							"gutter_color_117":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										117,
-										231
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1420":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#f2f2f2.png",
-								"regions":
-								[
-									[
-										1420,
-										1445
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1421":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#f2f2f2.png",
-								"regions":
-								[
-									[
-										1420,
-										1445
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1530":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#3d3d2f.png",
-								"regions":
-								[
-									[
-										1530,
-										1554
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1531":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#3d3d2f.png",
-								"regions":
-								[
-									[
-										1530,
-										1554
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2048":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										2048,
-										2070
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2049":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										2048,
-										2070
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_232":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										232,
-										272
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2451":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#151210.png",
-								"regions":
-								[
-									[
-										2451,
-										2469
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2452":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#151210.png",
-								"regions":
-								[
-									[
-										2451,
-										2469
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_273":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										273,
-										354
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2736":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fff.png",
-								"regions":
-								[
-									[
-										2736,
-										2754
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2737":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fff.png",
-								"regions":
-								[
-									[
-										2736,
-										2754
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2791":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										2791,
-										2810
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2792":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										2791,
-										2810
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3302":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3308,
-										3324
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3308":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3308,
-										3324
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3309":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3308,
-										3324
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3417":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3423,
-										3439
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3423":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3423,
-										3439
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3424":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3423,
-										3439
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3518":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3524,
-										3540
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3524":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3524,
-										3540
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3525":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3524,
-										3540
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_355":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										355,
-										453
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3632":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3638,
-										3654
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3638":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3638,
-										3654
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3639":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3638,
-										3654
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_38":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										38,
-										50
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3822":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3828,
-										3844
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3828":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3828,
-										3844
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3829":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										3828,
-										3844
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3858":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#cdc8b9.png",
-								"regions":
-								[
-									[
-										3864,
-										3902
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3864":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#cdc8b9.png",
-								"regions":
-								[
-									[
-										3864,
-										3902
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_3865":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#cdc8b9.png",
-								"regions":
-								[
-									[
-										3864,
-										3902
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4325":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										4331,
-										4364
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4332":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/tan.png",
-								"regions":
-								[
-									[
-										4331,
-										4364
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4445":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#151210.png",
-								"regions":
-								[
-									[
-										4451,
-										4473
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4452":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#151210.png",
-								"regions":
-								[
-									[
-										4451,
-										4473
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_454":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										454,
-										575
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4611":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ca8a4c.png",
-								"regions":
-								[
-									[
-										4617,
-										4639
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_4618":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ca8a4c.png",
-								"regions":
-								[
-									[
-										4617,
-										4639
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_576":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#fcfcfc.png",
-								"regions":
-								[
-									[
-										576,
-										705
-									]
-								],
-								"scope": "gutter_color"
-							}
 						},
 						"selection":
 						[
 							[
-								1211,
-								1211
+								173,
+								173
 							]
 						],
 						"settings":
@@ -1069,15 +530,15 @@
 								{
 									"1":
 									[
-										1214,
-										1215
+										173,
+										174
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"Packages/BracketHighlighter/icons/single_quote.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -1085,8 +546,8 @@
 								{
 									"1":
 									[
-										1066,
-										1067
+										159,
+										160
 									]
 								},
 								"unmatched":
@@ -1095,36 +556,16 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1135,50 +576,379 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Syntax-highlighting-for-Sass-master/Syntaxes/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/template/content.html",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1220,
+						"buffer_size": 12471,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										423,
+										430
+									],
+									[
+										460,
+										467
+									],
+									[
+										478,
+										485
+									],
+									[
+										552,
+										559
+									],
+									[
+										1154,
+										1161
+									],
+									[
+										1656,
+										1663
+									],
+									[
+										1687,
+										1694
+									],
+									[
+										2435,
+										2442
+									],
+									[
+										2520,
+										2527
+									],
+									[
+										2642,
+										2649
+									],
+									[
+										3050,
+										3057
+									],
+									[
+										3202,
+										3209
+									],
+									[
+										3393,
+										3400
+									],
+									[
+										3517,
+										3524
+									],
+									[
+										3586,
+										3593
+									],
+									[
+										3653,
+										3660
+									],
+									[
+										3714,
+										3721
+									],
+									[
+										3756,
+										3763
+									],
+									[
+										3868,
+										3875
+									],
+									[
+										4009,
+										4016
+									],
+									[
+										4095,
+										4102
+									],
+									[
+										4249,
+										4256
+									],
+									[
+										4320,
+										4327
+									],
+									[
+										4545,
+										4552
+									],
+									[
+										4669,
+										4676
+									],
+									[
+										4753,
+										4760
+									],
+									[
+										5125,
+										5132
+									],
+									[
+										5685,
+										5692
+									],
+									[
+										5737,
+										5744
+									],
+									[
+										5787,
+										5794
+									],
+									[
+										6100,
+										6107
+									],
+									[
+										6135,
+										6142
+									],
+									[
+										6163,
+										6170
+									],
+									[
+										6595,
+										6602
+									],
+									[
+										6891,
+										6898
+									],
+									[
+										7058,
+										7065
+									],
+									[
+										7313,
+										7320
+									],
+									[
+										7381,
+										7388
+									],
+									[
+										7389,
+										7396
+									],
+									[
+										7521,
+										7528
+									],
+									[
+										7621,
+										7628
+									],
+									[
+										7679,
+										7686
+									],
+									[
+										7749,
+										7756
+									],
+									[
+										7810,
+										7817
+									],
+									[
+										7902,
+										7909
+									],
+									[
+										7931,
+										7938
+									],
+									[
+										7991,
+										7998
+									],
+									[
+										8069,
+										8076
+									],
+									[
+										8110,
+										8117
+									],
+									[
+										8118,
+										8125
+									],
+									[
+										8520,
+										8527
+									],
+									[
+										8775,
+										8782
+									],
+									[
+										9026,
+										9033
+									],
+									[
+										9068,
+										9075
+									],
+									[
+										9224,
+										9231
+									],
+									[
+										9324,
+										9331
+									],
+									[
+										9382,
+										9389
+									],
+									[
+										9452,
+										9459
+									],
+									[
+										9513,
+										9520
+									],
+									[
+										9605,
+										9612
+									],
+									[
+										9634,
+										9641
+									],
+									[
+										9694,
+										9701
+									],
+									[
+										9781,
+										9788
+									],
+									[
+										9853,
+										9860
+									],
+									[
+										10090,
+										10097
+									],
+									[
+										10345,
+										10352
+									],
+									[
+										10696,
+										10703
+									],
+									[
+										11007,
+										11014
+									],
+									[
+										11095,
+										11102
+									],
+									[
+										11190,
+										11197
+									],
+									[
+										11233,
+										11240
+									],
+									[
+										11451,
+										11458
+									],
+									[
+										11516,
+										11523
+									],
+									[
+										11572,
+										11579
+									],
+									[
+										11759,
+										11766
+									],
+									[
+										12193,
+										12200
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								11752,
+								11766
 							]
 						],
 						"settings":
@@ -1188,27 +958,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										1214,
-										1218
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1,
-										5
-									]
 								},
 								"unmatched":
 								{
@@ -1216,11 +971,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1231,6 +981,11 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -1266,24 +1021,28 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded).tmTheme",
 							"colorcode": true,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"detect_indentation": false,
+							"git_gutter_is_enabled": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2925.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1348,7 +1107,7 @@
 		[
 			[
 				"",
-				"~/sites/www/Регистрал/registral.sublime-project"
+				"~/sites/www/whitelightmodels/Модели.sublime-project"
 			]
 		],
 		"width": 380.0

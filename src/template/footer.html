@@ -6,10 +6,25 @@
 				<a href=""><img src="..//img/obout.png"><span>нас</span></a>
 			</div>
 			<div class="buy">
-				<a href="">Где купить?</a>
+				<span id="where_buy">Где купить?</span>
 			</div>
 			<div class="clear"></div>
 		</div>
+		<section id="list_sites" style="display: none">
+		<div class="site_text" >
+		<a href="http://" target="_blank">Название магазина 1</a> <a href="http://" target="_blank">(ссылка)</a>
+	</div>
+	<div class="site_text">
+		<a href="" target="_blank">Название магазина 2</a> <a href="" target="_blank">(ссылка)</a>
+	</div>
+	<div class="site_text">
+		<a href="" target="_blank">Название магазина 3</a> <a href="" target="_blank">(ссылка)</a>
+	</div>
+	<div class="site_text">
+		<a href="" target="_blank">Название магазина 4</a> <a href="" target="_blank">(ссылка)</a>
+	</div>
+
+				</section>
 			<div class="sec_bl">
 				<div class="inf">
 				<p>Информация на сайте носит справочный
@@ -31,3 +46,15 @@
 	</div>
 	   
 </footer>
+<script> 
+    $(document).ready(function() { 
+     $("#where_buy").click(function () {
+      if ($("#list_sites").is(":hidden")) {
+        $("#list_sites").slideDown("slow");
+      } else {
+        $("#list_sites").slideUp("slow");
+      }
+ });
+
+    }); // end of ready() 
+  </script> 

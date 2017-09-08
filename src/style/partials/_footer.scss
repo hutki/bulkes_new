@@ -5,13 +5,12 @@ footer{
 	margin-top: 47px;
 	width: 100%;
 	min-width:1135px;
-	background: url(../img/footer_bg2.png) center center no-repeat;
+	background: url(../img/footer_bg2.png) top center no-repeat;
 
 	.footer-block{
 		margin: 0 auto;
 		width: 1105px;
-		padding: 0 15px;
-		height: 215px;
+		padding: 0 15px 25px 0;
 		.foot_bg{
 			
 			.first_bl{
@@ -37,10 +36,13 @@ footer{
 					}
 				}
 			}
+		
+
+
 			.buy{
 				float: left;
 				padding: 60px 0 0 200px;
-				a{
+				span{
 					width: 300px;
 					display: block;
 					text-decoration: none;
@@ -49,9 +51,38 @@ footer{
 					font-weight: 400;
 					line-height: 12.876px;
 					text-align: center;
+					cursor: pointer;
 				}
 			}
 			}
+				#list_sites{
+	margin-top: 80px;
+		
+		.site_text{
+			*display: inline !important;
+			display: inline-block;
+			margin-bottom: 25px;
+			margin-right: 180px;
+			padding: 0 7px;
+			zoom:1;
+			text-align:left;
+			a{
+				text-decoration: none;
+				color: #62615e;
+				font-size: 18px;
+				&:hover{
+					color:#808080;
+				}
+			}
+			
+		}
+	.site_text:nth-child(3n+2){
+	}
+	.site_text:nth-child(3n+3){
+			margin-right: 0;
+		}
+	
+}
 			.sec_bl{
 				.inf{
 				width: 215px;

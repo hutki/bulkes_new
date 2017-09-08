@@ -5,10 +5,6 @@
 body
 {
 	color:#333;
-	/*
-	background:url(../img/foot_bg.png) left bottom repeat-x;
-	*/
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,96957d+100 */
 	background: #fcfcfc; /* Old browsers */
 	background: -moz-linear-gradient(top, #fcfcfc 60%, #96957d 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #fcfcfc 60%,#96957d 100%); /* Chrome10-25,Safari5.1-6 */
@@ -63,7 +59,6 @@ header {
 				background: #3d3d2f;
 				opacity: 1.0;
 			}
-			
 		}
 	}
  	.head_ban{
@@ -120,12 +115,6 @@ header {
 		position: absolute;
 		right: 15px;
 		top:45px;
-		/*
-		.signature{
-			text-align: right;
-			margin: 10px 0 20px;
-		}
-		*/
 		.h_menu_l, .h_menu_r{
 			float: left; 
 			color: #151210;
@@ -134,7 +123,6 @@ header {
 				margin-bottom: 15px;
 				font-weight: normal;
 				line-height: 22px;
-
 			}
 			ul{
 				li{
@@ -240,6 +228,7 @@ header {
 					*display: inline !important;
 					display: inline-block;
 					padding: 0 7px;
+					zoom:1;
 					a{
 						text-decoration: none;
 						color:  #151210;
